@@ -4,16 +4,24 @@
 
 必要に応じてご利用ください。
 
-## 使いかた
+## 事前準備
 
 ```bash
 # 過去にwasm-bindgen-cliをインストールしている方はSKIPしてください
 $ rustup target add wasm32-unknown-unknown
 $ cargo install wasm-bindgen-cli
-$ cargo build --target wasm32-unknown-unknown
-$ wasm-bindgen target/wasm32-unknown-unknown/debug/rust_handson.wasm --out-dir .
-$ npm i
-$ npm run serve
+```
+
+## build
+
+```bash
+$ yarn dev:build
+```
+
+## run
+
+``bash
+$ yarn dev:run
 ```
 
 ## 実行に必要なもの
