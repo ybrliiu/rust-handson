@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "serve": "webpack-dev-server"
+    "server": "webpack-dev-server",
+    "cargo-build": "cargo build --target wasm32-unknown-unknown",
+    "wasm-bindgen": "wasm-bindgen target/wasm32-unknown-unknown/debug/rust_handson.wasm --out-dir . ",
+    "dev-run": "yarn cargo-build && yarn wasm-bindgen && yarn server"
   },
   "keywords": [],
   "author": "dorayakikun <amakunai.dorayaki@gmaill.com> (https://medium.com/@dorayakikun)",
